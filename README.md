@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <b><font size="5" color="#FF4500">🔥🔥 EgoProx is accepted by CVPR 2026! 🔥🔥</font></b>
+  🔥🔥 EgoProx is accepted by CVPR 2026! 🔥🔥
 </p>
 
 <p align="center">
@@ -58,7 +58,7 @@ For open-source models like the Qwen series, you can use the provided script `in
 ```bash
 python inference/infer_qwen.py \
   --model_path <path_to_qwen_model> \
-  --input_json <path_to_input_json> \
+  --input_json data/egoprox_test.json \
   --output_json <path_to_output_json> \
   --image_base_dir data/Frames \
   --batch_size 16
@@ -68,7 +68,7 @@ python inference/infer_qwen.py \
 For closed-source API models like the GPT series, you can use `inference/infer_gpt.py`:
 ```bash
 python inference/infer_gpt.py \
-  --input_json <path_to_input_json> \
+  --input_json data/egoprox_test.json \
   --output_json <path_to_output_json> \
   --image_base_dir data/Frames \
   --base_url <your_base_url> \
