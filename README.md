@@ -49,7 +49,7 @@ EgoProx is a benchmark for evaluating egocentric 3D proximity reasoning in multi
    tar -xf Frames.tar
    ```
 
-## Evaluation / Inference
+## Evaluation 
 
 For evaluating models on EgoProx, we provide inference scripts demonstrating how to use both open-source and closed-source models. After getting the inference results, you can use `evaluate.py` to calculate the metrics.
 
@@ -91,3 +91,7 @@ This will print out the accuracy (ACC) for each of the core dimensions (Intentio
 ## License
 
 EgoProx is released under the `CC BY-NC 4.0` license. By downloading our dataset, the user agrees to adhere to the terms of this license.
+
+## 📍 Citing EgoProx
+```bibtex
+```
