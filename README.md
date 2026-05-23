@@ -23,7 +23,7 @@
 We aim to evaluate multimodal large language models (MLLMs) on complex egocentric 3D proximity reasoning tasks. Our benchmark spans four core dimensions following a cognitive hierarchy: Intention, Exploration, Exploitation, and Chain of Actions. We adopt approximate transformations and relative spatial relationships to represent proximity. The examples illustrate the model’s need to interpret long-term contextual cues, spatial dependencies, and action-state changes from first-person visual inputs, providing a comprehensive assessment of egocentric spatial intelligence.
 
 <p align="center">
-  <img src="/home/tiger/.cache/coco/sessions/30b44744-d8bb-4f1f-98c2-07c46c66d08b/file-cache/file_1779517203.png" alt="Introduction to EgoProx" width="100%">
+  <img src="assets/introduction.png" alt="Introduction to EgoProx" width="100%">
 </p>
 
 ## Dataset Statistics
@@ -31,7 +31,7 @@ We aim to evaluate multimodal large language models (MLLMs) on complex egocentri
 EgoProx is a benchmark for evaluating egocentric 3D proximity reasoning in multimodal large language models. It contains 2,405 VQA samples collected from two complementary egocentric datasets: 1,016 samples from Aria Digital Twin (ADT) and 1,389 samples from EgoExo4D. The benchmark covers a broad spectrum of proximity reasoning scenarios and is organized according to a four-level cognitive hierarchy consisting of Intention (30.27%), Exploration (15.71%), Exploitation (46.37%), and Chain of Actions (7.65%).
 
 <p align="center">
-  <img src="/home/tiger/.cache/coco/sessions/30b44744-d8bb-4f1f-98c2-07c46c66d08b/file-cache/file_1779517265.png" alt="EgoProx Statistics" width="80%">
+  <img src="assets/statistics.png" alt="EgoProx Statistics" width="80%">
 </p>
 
 ## Data Preparation
