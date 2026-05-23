@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  🔥🔥 EgoProx is accepted by CVPR 2026! 🔥🔥
+  <b><font size="5" color="#FF4500">🔥🔥 EgoProx is accepted by CVPR 2026! 🔥🔥</font></b>
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 
 ## Introduction
 
-We aim to evaluate multimodal large language models (MLLMs) on complex egocentric 3D proximity reasoning tasks. Our benchmark spans four core dimensions following a cognitive hierarchy: Intention, Exploration, Exploitation, and Chain of Actions. We adopt approximate transformations and relative spatial relationships to represent proximity. The examples illustrate the model’s need to interpret long-term contextual cues, spatial dependencies, and action-state changes from first-person visual inputs, providing a comprehensive assessment of egocentric spatial intelligence.
+EgoProx is a comprehensive benchmark designed to evaluate multimodal large language models (MLLMs) on complex egocentric 3D proximity reasoning tasks. The benchmark spans four core dimensions following a cognitive hierarchy: Intention, Exploration, Exploitation, and Chain of Actions. It adopts approximate distance estimation and relative spatial relationships to represent proximity. The examples illustrate the model’s need to interpret long-term contextual cues, spatial dependencies, and action-state changes from first-person visual inputs, providing a comprehensive assessment of egocentric spatial intelligence.
 
 <p align="center">
   <img src="assets/introduction.png" alt="Introduction to EgoProx" width="100%">
