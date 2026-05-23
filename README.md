@@ -1,5 +1,5 @@
 <h1 align="center">
-  EgoProx
+  EgoProx: Evaluating MLLMs on Egocentric 3D Proximity Reasoning Across a Cognitive Hierarchy
 </h1>
 
 <p align="center">
@@ -36,25 +36,32 @@ EgoProx is a benchmark for evaluating egocentric 3D proximity reasoning in multi
 
 ## Data Preparation
 
-1. Download `Frames.tar` from our [Hugging Face repository](https://huggingface.co/datasets/lijinzhao30/EgoProx).
-2. Place the downloaded file at `Egoprox/data/Frames.tar`.
-3. Extract the contents into the `Egoprox/data/Frames` directory:
+1. Clone the repository:
    ```bash
-   cd Egoprox/data/
+   git clone https://github.com/lijinzhao30/Egoprox.git
+   cd Egoprox
+   ```
+2. Download `Frames.tar` from our [Hugging Face repository](https://huggingface.co/datasets/lijinzhao30/EgoProx).
+3. Place the downloaded file at `data/Frames.tar`.
+4. Extract the contents into the `data/Frames` directory:
+   ```bash
+   cd data/
    tar -xf Frames.tar
    ```
 
 ## Evaluation / Inference
 
-For evaluating models on EgoProx, we provide inference scripts demonstrating how to use both open-source and closed-source models.
+For evaluating models on EgoProx, we provide inference scripts demonstrating how to use both open-source and closed-source models. After getting the inference results, you can use `evaluate.py` to calculate the metrics.
 
 ### Open-source Models
 For open-source models like the Qwen series, you can use the provided script `inference/infer_qwen.py`:
 ```bash
 python inference/infer_qwen.py \
+  --model_path <path_to_qwen_model> \
   --input_json <path_to_input_json> \
   --output_json <path_to_output_json> \
-  --image_base_dir data/Frames
+  --image_base_dir data/Frames \
+  --batch_size 16
 ```
 
 ### Closed-source Models
@@ -70,6 +77,16 @@ python inference/infer_gpt.py \
   --model_name <your_model_name> \
   --max_workers 16
 ```
+
+### Scoring
+
+After running the inference scripts, you will get an output JSON file containing the model's predictions. Use the `evaluate.py` script to compute the final metrics:
+
+```bash
+python evaluate.py --path <path_to_output_json>
+```
+
+This will print out the accuracy (ACC) for each of the core dimensions (Intention, Exploration, Exploitation) under both Approx and Relative settings, as well as the specialized metrics (Act-Acc, Rel-Acc-S, Rel-Acc-L) for the Chain of Actions task.
 
 ## License
 
