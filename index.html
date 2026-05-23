@@ -473,11 +473,11 @@
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 2h8l5 5v15H6V2Zm7 1.8V8h4.2L13 3.8ZM8.7 15.6c.42-.7.82-1.48 1.16-2.27-.34-1.28-.25-2.18.26-2.52.34-.22.78-.12 1.02.18.33.42.27 1.16-.2 2.2.28.77.68 1.47 1.18 2.02.62-.12 1.18-.15 1.63-.08.65.1 1.01.42.96.85-.04.36-.38.62-.87.62-.56 0-1.24-.3-1.95-.86-.75.17-1.58.43-2.37.74-.62.95-1.16 1.43-1.62 1.43-.36 0-.62-.24-.66-.58-.05-.46.38-.93 1.46-1.73Zm1.75-1.05c-.18.36-.38.72-.58 1.07.39-.14.79-.26 1.18-.37-.22-.22-.42-.46-.6-.7Z"/></svg>
           <span>Paper</span>
         </a>
-        <a class="button" href="https://lijinzhao30.github.io/Egoprox/" target="_blank" rel="noopener" aria-label="Open Code">
+        <a class="button" href="https://github.com/lijinzhao30/Egoprox" target="_blank" rel="noopener" aria-label="Open Code">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.69 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.16 1.18.92-.26 1.9-.38 2.88-.39.98.01 1.96.13 2.88.39 2.2-1.49 3.16-1.18 3.16-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.82 1.18 3.08 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
           <span>Code</span>
         </a>
-        <a class="button" href="https://lijinzhao30.github.io/Egoprox/" target="_blank" rel="noopener" aria-label="Open Dataset">
+        <a class="button" href="https://huggingface.co/datasets/lijinzhao30/EgoProx" target="_blank" rel="noopener" aria-label="Open Dataset">
           <span class="hf-icon" aria-hidden="true">🤗</span>
           <span>Dataset</span>
         </a>
@@ -506,16 +506,27 @@
         <h2>Key Contributions</h2>
         <div class="grid-3">
           <article class="contribution">
-            <h3>Egocentric Proximity Benchmark</h3>
-            <p>We propose EgoProx, the first benchmark designed to evaluate whether MLLMs can reason about 3D perception-action coupling from an egocentric point of view across Intention, Exploration, Exploitation, and Chain of Actions.</p>
+            <h3>EgoProc Benchmark</h3>
+            <p>We propose EgoProx, the first benchmark designed
+              to evaluate whether MLLMs can reason 3D percep-
+              tion–action coupling from an egocentric point-of-view,
+              with four tasks organized along a cognitive hierarchy: In-
+              tention, Exploration, Exploitation, and Chain of Actions.</p>
           </article>
           <article class="contribution">
-            <h3>Agent-Based Data Engine</h3>
-            <p>We develop an agent-based data generation pipeline that combines a task-aware salient clip sampler with a 3D analysis toolset to automatically synthesize high-quality VQA data across diverse task categories.</p>
+            <h3>Agentic Data Engine</h3>
+            <p>We develop an agent-based data generation pipeline that
+              leverages task-aware salient clip sampler and 3D analy-
+              sis toolset to automatically synthesize high-quality VQA
+              data across diverse task categories.</p>
           </article>
           <article class="contribution">
             <h3>Cross-Domain Spatial Analysis</h3>
-            <p>Through extensive evaluation and instruction-tuning experiments, we show that existing MLLMs contain latent spatial knowledge acquired during pretraining, but require structured supervision to unlock it.</p>
+            <p>Through extensive evaluation and cross-domain
+              instruction-tuning experiments, we demonstrate that
+              existing MLLMs already contain latent spatial knowl-
+              edge acquired during pretraining, but unlocking this
+              capability requires structured supervision.</p>
           </article>
         </div>
       </div>
@@ -525,12 +536,12 @@
       <div class="wrap">
         <h2>Cognitive Hierarchy of EgoProx</h2>
         <p class="lead">
-          EgoProx organizes egocentric 3D proximity reasoning as a cognitive hierarchy. Intention captures immediate gaze and head-orientation shifts toward goals; Exploration studies navigation steps toward objects or locations; Exploitation evaluates upcoming human-object interactions; and Chain of Actions asks models to reason over multi-step future behavior and the spatial relationships among action locations. Approximate proximity models coarse metric rotations and translations, while relative proximity captures directional relationships such as left, right, front, back, near, and far.
+          EgoProx organizes egocentric 3D proximity reasoning as a cognitive hierarchy. Intention captures immediate gaze and head-orientation shifts toward goals; Exploration studies navigation steps toward objects or locations; Exploitation evaluates upcoming human-object interactions; and Chain of Actions asks models to reason over multi-step future behavior and the spatial relationships among action locations. Approximate proximity models coarse metric rotations and translations, while relative proximity captures directional relationships.
         </p>
         <div class="figure">
           <img src="assets/teaser.png" alt="Cognitive hierarchy examples in EgoProx">
           <div class="caption-block">
-            <h3>Four-Level Egocentric Reasoning</h3>
+            <h3>Four-Level Egocentric 3D Proximity Reasoning</h3>
             <p>The benchmark requires models to use long-term contextual cues, spatial dependencies, and action-state changes from first-person videos, moving from local intention cues toward higher-order action chains.</p>
           </div>
         </div>
@@ -540,7 +551,7 @@
           </div>
           <div class="caption-block">
             <h3>Task Distribution</h3>
-            <p>EgoProx contains 2,405 samples and emphasizes exploitation-oriented reasoning, which accounts for 46.37% of the benchmark. Intention contributes 30.27%, exploration contributes 15.71%, and chain-of-actions reasoning contributes 7.65%. Within the first three categories, approximate and relative proximity are both represented, making the benchmark sensitive to metric-like transformations as well as directional spatial relationships.</p>
+            <p>EgoProx contains 2,405 VQA samples collected from two complementary egocentric datasets: 1,016 samples from Aria Digital Twin and 1,389 samples from EgoExo4D. The benchmark covers a broad spectrum of proximity reasoning scenarios and is organized according to a four-level cognitive hierarchy consisting of Intention (30.27%), Exploration (15.71%), Exploitation (46.37%), and Chain of Actions (7.65%).</p>
             <div class="stat-list">
               <div class="stat"><span class="swatch" style="background:#4a76c9"></span>Intention: 30.27%</div>
               <div class="stat"><span class="swatch" style="background:#e6495f"></span>Exploration: 15.71%</div>
@@ -556,13 +567,16 @@
       <div class="wrap">
         <h2>Agentic Data Engine</h2>
         <p class="lead">
-          Given an egocentric video, metadata such as camera pose, objects and action labels, and a user-specified task category, the EgoProx agent orchestrates specialized tools to synthesize controllable question-answer pairs. The engine first samples salient clips around fixations, interactions, goals, and future action windows. It then invokes 3D analysis tools for occupancy maps, feasible exploration paths, spatial distance and direction calculation, gaze parsing, affordance detection, key-step extraction, and action-chain construction. Post-processing discretizes transformations and spatial relationships into human-interpretable answer options, followed by human verification for answerability and correctness.
+          Overview of our agent-based data construction pipeline.The agent first identifies salient moments with an interaction- and
+          fixation-based sampler, then uses the 3D Analysis Toolset to extract spatial cues such as object positions, gaze targets, occupancy maps,
+          and action chains. It then invokes the Spatial Calculator to derive 3D distances, orientations, and proximity relations, producing structured
+          3D proximity ground truth. Final benchmark question-answer pairs are compiled through necessary post-processing.
         </p>
         <div class="figure">
           <img src="assets/agent.png" alt="Agentic data engine overview">
           <div class="caption-block">
             <h3>From Video to Structured 3D Proximity QA</h3>
-            <p>The pipeline turns egocentric video streams into benchmark-ready QA by composing task-specific evidence, 3D proximity ground truth, hard-negative options, and validated answers.</p>
+            <p>The Agentic Data Engine converts egocentric video streams and raw annotations into scalable 3D proximity reasoning VQA data.</p>
           </div>
         </div>
       </div>
@@ -606,7 +620,7 @@
             </tbody>
           </table>
         </div>
-        <p class="section-note">Even strong proprietary models remain far below human performance, especially on Chain of Actions. The results also show that model scaling alone brings limited gains for 3D proximity reasoning, while Qwen-series models are the strongest open-source baselines overall.</p>
+        <p class="section-note">Even strong proprietary models remain far below human performance, especially on Chain of Actions. The results also show that model scaling alone brings limited gains for 3D proximity reasoning.</p>
       </div>
     </section>
 
