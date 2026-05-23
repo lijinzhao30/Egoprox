@@ -10,7 +10,7 @@
   <a href="#" style="margin-right: 10px;"> 
     <img src="https://img.shields.io/badge/Paper-Pending-b31b1b.svg">
   </a>
-  <a href="#" style="margin-right: 10px;"> 
+  <a href="https://lijinzhao30.github.io/Egoprox/" style="margin-right: 10px;"> 
     <img src="https://img.shields.io/badge/Project%20Page-Link-blue.svg">
   </a>
   <a href="https://huggingface.co/datasets/lijinzhao30/EgoProx" style="margin-right: 10px;"> 
