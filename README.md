@@ -94,4 +94,13 @@ EgoProx is released under the `CC BY-NC 4.0` license. By downloading our dataset
 
 ## 📍 Citing EgoProx
 ```bibtex
+@misc{li2026egoproxevaluatingmllmsegocentric,
+      title={EgoProx: Evaluating MLLMs on Egocentric 3D Proximity Reasoning Across a Cognitive Hierarchy}, 
+      author={Jinzhao Li and Yinuo Chen and Dongxu Piao and Panwang Pan and Yifan Yu and Dong Wang and Honglei Yan and Liang Yue and Shaofei Wang and Yixin Chen and Siyuan Huang and Miao Liu},
+      year={2026},
+      eprint={2605.24456},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.24456}, 
+}
 ```
