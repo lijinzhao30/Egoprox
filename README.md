@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="#" style="margin-right: 10px;"> 
-    <img src="https://img.shields.io/badge/Paper-Pending-b31b1b.svg">
+  <a href="https://arxiv.org/abs/2605.24456" style="margin-right: 10px;"> 
+    <img src="https://img.shields.io/badge/Paper-2605.24456-b31b1b.svg">
   </a>
   <a href="https://lijinzhao30.github.io/Egoprox/" style="margin-right: 10px;"> 
     <img src="https://img.shields.io/badge/Project%20Page-Link-blue.svg">
